@@ -1,0 +1,8 @@
+venv/*
+.idea/*
+*__pycache__*
+*.egg-info/*
+dist/*
+build/*
+mothballed.py
+.env
