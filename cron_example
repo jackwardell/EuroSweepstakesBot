@@ -1,0 +1,1 @@
+0 6 * * * source /root/eurosbot/.env && /root/eurosbot/venv/bin/python /root/eurosbot/crons/fixtures_bot/fixtures_bot.py

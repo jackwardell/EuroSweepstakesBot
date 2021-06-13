@@ -8,8 +8,8 @@ def get_bot():
 
 
 def ping_telegram(message):
-    print(message)
-    # return get_bot().send_message(TelegramAPI.CHAT_ID, message)
+    # print(message)
+    return get_bot().send_message(TelegramAPI.CHAT_ID, message)
 
 
 def get_peckham_weather_emoji():
@@ -17,3 +17,5 @@ def get_peckham_weather_emoji():
         WeatherAPI.WEATHER_URL, params={"q": "Peckham", "appid": WeatherAPI.API_KEY}
     ).json()["weather"][0]["id"]
     return WeatherAPI.ID_TO_EMOJI[weather_id]
+
+
