@@ -42,15 +42,14 @@ def main():
         }
         messages.append(FIXTURE_MESSAGE.format(**data))
 
+    weather = get_peckham_weather_emoji()
+
+    comment = "Here are the fixtures 👇" if messages else "Just chill the fuck out 🍻"
+
+    ping_telegram(
+        f"{weather} Good Morning Friends {weather}\n⚽ Today there {len(messages)} matches. {comment}")
+
     if messages:
-        try:
-            weather = get_peckham_weather_emoji()
-        except:
-            weather = "🌞"
-
-        ping_telegram(
-            f"{weather} Good Morning Friends {weather}\n⚽ Today there {len(messages)} matches. Here are the fixtures 👇")
-
         for message in messages:
             ping_telegram(message)
 

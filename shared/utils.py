@@ -13,9 +13,12 @@ def ping_telegram(message):
 
 
 def get_peckham_weather_emoji():
-    weather_id = requests.get(
-        WeatherAPI.WEATHER_URL, params={"q": "Peckham", "appid": WeatherAPI.API_KEY}
-    ).json()["weather"][0]["id"]
-    return WeatherAPI.ID_TO_EMOJI[weather_id]
+    try:
+        weather_id = requests.get(
+            WeatherAPI.WEATHER_URL, params={"q": "Peckham", "appid": WeatherAPI.API_KEY}
+        ).json()["weather"][0]["id"]
+        return WeatherAPI.ID_TO_EMOJI[weather_id]
+    except:
+        return "🌞"
 
 
