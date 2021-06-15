@@ -70,7 +70,7 @@ def main():
         }
         messages.append(RESULT_MESSAGE.format(**data))
 
-    comment = "☠ ️Here are the results from today 👇"
+    comment = "☠️Here are the results from today 👇"
 
     if messages:
         ping_telegram(comment)
