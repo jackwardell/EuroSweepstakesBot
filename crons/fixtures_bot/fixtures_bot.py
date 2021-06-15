@@ -1,10 +1,12 @@
 from datetime import date
 from datetime import datetime
 from datetime import timedelta
-from shared.utils import get_peckham_weather_emoji
+
 import requests
 
-from shared.static import TEAMS, FootballAPI
+from shared.static import FootballAPI
+from shared.static import TEAMS
+from shared.utils import get_peckham_weather_emoji
 from shared.utils import ping_telegram
 
 FIXTURE_MESSAGE = "🤝 Teams: {home_team} play {away_team} \n🏟️ Stadium: {stadium} in {city} 🧑‍🤝‍🧑\n🦵 Kick Off: {kick_off} today ⏱️\n🔢 Round: {round} 💫\n⚔️ Rivals: {home_rival} vs. {away_rival} 😈"

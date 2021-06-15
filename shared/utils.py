@@ -1,6 +1,8 @@
-from shared.static import TelegramAPI, WeatherAPI
-from telegram import Bot
 import requests
+from telegram import Bot
+
+from shared.static import TelegramAPI
+from shared.static import WeatherAPI
 
 
 def get_bot():
@@ -20,5 +22,3 @@ def get_peckham_weather_emoji():
         return WeatherAPI.ID_TO_EMOJI[weather_id]
     except:
         return "🌞"
-
-
