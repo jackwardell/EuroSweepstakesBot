@@ -6,3 +6,4 @@ dist/*
 build/*
 mothballed.py
 .env
+*.DS_STORE

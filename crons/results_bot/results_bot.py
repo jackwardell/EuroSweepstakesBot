@@ -1,11 +1,12 @@
 from datetime import date
-from datetime import timedelta
 
 import requests
 
 from shared.static import FootballAPI
 from shared.static import TEAMS
 from shared.utils import ping_telegram
+from shared.utils import ping_telegram_with_image
+from shared.utils import write_to_spiderman_image
 
 BEAT_WORDING = {
     0: "drew with",
@@ -60,23 +61,29 @@ def main():
         except:
             action = "beat so badly I didn't even program how badly the beating was"
 
-        data = {
+        values = {
             "winning_team": TEAMS[winning_team]["name"],
             "losing_team": TEAMS[losing_team]["name"],
             "action": action,
             "score": score,
             "comment": comment
-
         }
-        messages.append(RESULT_MESSAGE.format(**data))
+        data = {'values': values, 'winner': winner, 'loser': loser}
+        messages.append(data)
 
     comment = "⚔️ Here are the results from today 👇"
 
     if messages:
         ping_telegram(comment)
 
-        for message in messages:
-            ping_telegram(message)
+        for data in messages:
+            message = ping_telegram(RESULT_MESSAGE.format(**data['values']))
+            data['message_id'] = message.message_id
+
+    for data in messages:
+        if data["winner"] == data["loser"]:
+            file_path = write_to_spiderman_image(data["winner"])
+            ping_telegram_with_image("lol 🤔", file_path, data['message_id'])
 
 
 if __name__ == "__main__":
