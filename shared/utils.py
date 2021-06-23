@@ -20,7 +20,8 @@ def ping_telegram(message):
 
 def ping_telegram_with_image(message, image, reply_to_id):
     # print(message)
-    return get_bot().send_photo(TelegramAPI.CHAT_ID, image, message, reply_to_message_id=reply_to_id)
+    with open(image, 'rb') as jpg:
+        return get_bot().send_photo(TelegramAPI.CHAT_ID, jpg, message, reply_to_message_id=reply_to_id)
 
 
 def get_peckham_weather_emoji():
@@ -36,7 +37,6 @@ def get_peckham_weather_emoji():
 def make_spiderman_image_path(text: str) -> Path:
     image_name = f"spiderman-{text}.jpg"
     image_path = EUROS_BOT_ROOT / "assets" / image_name
-    from IPython import embed; embed()
     return image_path
 
 
