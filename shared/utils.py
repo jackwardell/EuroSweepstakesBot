@@ -35,7 +35,8 @@ def get_peckham_weather_emoji():
 
 def make_spiderman_image_path(text: str) -> Path:
     image_name = f"spiderman-{text}.jpg"
-    image_path = (EUROS_BOT_ROOT / "assets" / image_name)
+    image_path = EUROS_BOT_ROOT / "assets" / image_name
+    from IPython import embed; embed()
     return image_path
 
 
