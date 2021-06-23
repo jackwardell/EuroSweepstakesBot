@@ -1,12 +1,14 @@
+from pathlib import Path
+
 import requests
-from telegram import Bot
-from pathlib import Path
-from shared.static import TelegramAPI
-from shared.static import WeatherAPI, EUROS_BOT_ROOT
 from PIL import Image
-from PIL import ImageFont
 from PIL import ImageDraw
-from pathlib import Path
+from PIL import ImageFont
+from telegram import Bot
+
+from shared.static import EUROS_BOT_ROOT
+from shared.static import TelegramAPI
+from shared.static import WeatherAPI
 
 
 def get_bot():
