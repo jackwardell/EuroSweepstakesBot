@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 
 import requests
 
@@ -27,8 +27,8 @@ def main():
     params = {
         "league": FootballAPI.LEAGUE_ID,
         "season": FootballAPI.SEASON,
-        "from": str(date.today()),
-        "to": str(date.today()),
+        "from": str(date.today() - timedelta(days=1)),
+        "to": str(date.today() - timedelta(days=1)),
     }
     response = requests.get(
         FootballAPI.FIXTURE_URL, headers=FootballAPI.HEADERS, params=params

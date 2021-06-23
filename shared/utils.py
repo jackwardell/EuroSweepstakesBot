@@ -2,7 +2,7 @@ import requests
 from telegram import Bot
 from pathlib import Path
 from shared.static import TelegramAPI
-from shared.static import WeatherAPI, PROJECT_ROOT
+from shared.static import WeatherAPI, EUROS_BOT_ROOT
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
@@ -35,7 +35,7 @@ def get_peckham_weather_emoji():
 
 def make_spiderman_image_path(text: str) -> Path:
     image_name = f"spiderman-{text}.jpg"
-    image_path = (PROJECT_ROOT / "assets" / image_name)
+    image_path = (EUROS_BOT_ROOT / "assets" / image_name)
     return image_path
 
 
@@ -45,9 +45,9 @@ def write_to_spiderman_image(text: str) -> Path:
     if image_path.exists():
         return image_path
 
-    spiderman_image = Image.open(str(PROJECT_ROOT / "assets/spiderman.jpg"))
+    spiderman_image = Image.open(str(EUROS_BOT_ROOT / "assets/spiderman.jpg"))
     draw = ImageDraw.Draw(spiderman_image)
-    font = ImageFont.truetype(str(PROJECT_ROOT / "assets/OpenSans-Bold.ttf"), 64)
+    font = ImageFont.truetype(str(EUROS_BOT_ROOT / "assets/OpenSans-Bold.ttf"), 64)
     draw.text((100, 175), text, (0, 0, 0), font=font)
     draw.text((520, 225), text, (0, 0, 0), font=font)
 
