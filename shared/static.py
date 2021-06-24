@@ -114,16 +114,71 @@ TEAMS = {
 }
 
 SELECTIONS = {
-    "Zoe": ['Denmark 🇩🇰', 'Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿', ],
-    "Emma": ['Portugal 🇵🇹', 'Switzerland 🇨🇭', ],
-    "Alex": ['Germany 🇩🇪', 'Hungary 🇭🇺', ],
-    "Paddy": ['Croatia 🇭🇷', 'Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿', ],
-    "Fionnuala": ['France 🇫🇷', 'Russia 🇷🇺'],
-    "Giulia": ['Turkey 🇹🇷', 'North Macedonia 🇲🇰', ],
-    "Delia": ['Netherlands 🇳🇱', 'Finland 🇫🇮', ],
-    "Hannah": ['England 🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'Austria 🇦🇹', ],
-    "Nathalie": ['Poland 🇵🇱', 'Czech Republic 🇨🇿', ],
-    "Grace": ['Italy 🇮🇹', 'Slovakia 🇸🇰', ],
-    "Lucy": ['Spain 🇪🇸', 'Ukraine 🇺🇦', ],
-    "Jack": ['Belgium 🇧🇪', 'Sweden 🇸🇪', ],
+    "Zoe": [
+        "Denmark 🇩🇰",
+        "Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    ],
+    "Emma": [
+        "Portugal 🇵🇹",
+        "Switzerland 🇨🇭",
+    ],
+    "Alex": [
+        "Germany 🇩🇪",
+        "Hungary 🇭🇺",
+    ],
+    "Paddy": [
+        "Croatia 🇭🇷",
+        "Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    ],
+    "Fionnuala": [
+        "France 🇫🇷",
+        "Russia 🇷🇺"
+    ],
+    "Giulia": [
+        "Turkey 🇹🇷",
+        "North Macedonia 🇲🇰",
+    ],
+    "Delia": [
+        "Netherlands 🇳🇱",
+        "Finland 🇫🇮",
+    ],
+    "Hannah": [
+        "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "Austria 🇦🇹",
+    ],
+    "Nathalie": [
+        "Poland 🇵🇱",
+        "Czech Republic 🇨🇿",
+    ],
+    "Grace": [
+        "Italy 🇮🇹",
+        "Slovakia 🇸🇰",
+    ],
+    "Lucy": [
+        "Spain 🇪🇸",
+        "Ukraine 🇺🇦",
+    ],
+    "Jack": [
+        "Belgium 🇧🇪",
+        "Sweden 🇸🇪",
+    ],
 }
+
+LAST_16 = [
+    "Netherlands",
+    "Belgium",
+    "Italy",
+    "Wales",
+    "Austria",
+    "Denmark",
+    "Switzerland",
+    "France",
+    "Czech Republic",
+    "Sweden",
+    "England",
+    "Croatia",
+    "Ukraine",
+    "Spain",
+    "Portugal",
+    "Germany",
+]
