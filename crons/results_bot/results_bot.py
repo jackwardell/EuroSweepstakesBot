@@ -161,7 +161,8 @@ def main():
             msgs.append(f"❌ GET FUCKING REKT {p.upper()}, YOU'RE OUT 💀\nYOU ARE A {random.choice(rude_words)}!")
         else:
             msgs.append(f"Tough break Jack... looks like you're out, don't worry you can take Giulia's money for being last 😉")
-    ping_telegram("\n".join(msgs))
+    if msgs:
+        ping_telegram("\n".join(msgs))
 
 
 if __name__ == "__main__":
