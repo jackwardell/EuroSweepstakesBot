@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 EUROS_BOT_ROOT = Path(__file__).resolve().parent.parent
 
+TEAMS_DATA_PATH = EUROS_BOT_ROOT / "data/teams.json"
+
 load_dotenv(EUROS_BOT_ROOT / ".env")
 
 
@@ -111,6 +113,58 @@ TEAMS = {
     "Ukraine": {"name": "Ukraine 🇺🇦", "person": "Lucy"},
     "Switzerland": {"name": "Switzerland 🇨🇭", "person": "Emma"},
     "Sweden": {"name": "Sweden 🇸🇪", "person": "Jack"},
+}
+
+
+SELECTIONS2 = {
+    "Zoe": [
+        "Denmark",
+        "Wales󠁿",
+    ],
+    "Emma": [
+        "Portugal",
+        "Switzerland",
+    ],
+    "Alex": [
+        "Germany",
+        "Hungary",
+    ],
+    "Paddy": [
+        "Croatia",
+        "Scotland󠁳󠁣󠁴󠁿",
+    ],
+    "Fionnuala": [
+        "France",
+        "Russia"
+    ],
+    "Giulia": [
+        "Turkey",
+        "FYR Macedonia",
+    ],
+    "Delia": [
+        "Netherlands",
+        "Finland",
+    ],
+    "Hannah": [
+        "England",
+        "Austria",
+    ],
+    "Nathalie": [
+        "Poland",
+        "Czech Republic",
+    ],
+    "Grace": [
+        "Italy",
+        "Slovakia",
+    ],
+    "Lucy": [
+        "Spain",
+        "Ukraine",
+    ],
+    "Jack": [
+        "Belgium",
+        "Sweden",
+    ],
 }
 
 SELECTIONS = {

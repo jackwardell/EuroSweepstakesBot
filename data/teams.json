@@ -1,0 +1,122 @@
+{
+  "France": {
+    "person": "Fionnuala",
+    "knocked_out": false,
+    "date": null
+  },
+  "England": {
+    "person": "Hannah",
+    "knocked_out": false,
+    "date": null
+  },
+  "Belgium": {
+    "person": "Jack",
+    "knocked_out": false,
+    "date": null
+  },
+  "Spain": {
+    "person": "Lucy",
+    "knocked_out": false,
+    "date": null
+  },
+  "Germany": {
+    "person": "Alex",
+    "knocked_out": false,
+    "date": null
+  },
+  "Portugal": {
+    "person": "Emma",
+    "knocked_out": false,
+    "date": null
+  },
+  "Netherlands": {
+    "person": "Delia",
+    "knocked_out": false,
+    "date": null
+  },
+  "Denmark": {
+    "person": "Zoe",
+    "knocked_out": false,
+    "date": null
+  },
+  "Croatia": {
+    "person": "Paddy",
+    "knocked_out": false,
+    "date": null
+  },
+  "Turkey": {
+    "person": "Giulia",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Italy": {
+    "person": "Grace",
+    "knocked_out": false,
+    "date": null
+  },
+  "Poland": {
+    "person": "Nathalie",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "FYR Macedonia": {
+    "person": "Giulia",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Wales": {
+    "person": "Zoe",
+    "knocked_out": false,
+    "date": null
+  },
+  "Hungary": {
+    "person": "Alex",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Slovakia": {
+    "person": "Grace",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Scotland": {
+    "person": "Paddy",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Finland": {
+    "person": "Delia",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Czech Republic": {
+    "person": "Nathalie",
+    "knocked_out": false,
+    "date": null
+  },
+  "Russia": {
+    "person": "Fionnuala",
+    "knocked_out": true,
+    "date": "2021-06-24"
+  },
+  "Austria": {
+    "person": "Hannah",
+    "knocked_out": false,
+    "date": null
+  },
+  "Ukraine": {
+    "person": "Lucy",
+    "knocked_out": false,
+    "date": null
+  },
+  "Switzerland": {
+    "person": "Emma",
+    "knocked_out": false,
+    "date": null
+  },
+  "Sweden": {
+    "person": "Jack",
+    "knocked_out": false,
+    "date": null
+  }
+}
