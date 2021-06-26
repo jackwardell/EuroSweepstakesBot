@@ -42,8 +42,8 @@ def main():
     params = {
         "league": FootballAPI.LEAGUE_ID,
         "season": FootballAPI.SEASON,
-        "from": str(date.today() - timedelta(days=1)),
-        "to": str(date.today() - timedelta(days=1)),
+        "from": str(date.today()),
+        "to": str(date.today()),
     }
     response = requests.get(
         FootballAPI.FIXTURE_URL, headers=FootballAPI.HEADERS, params=params
@@ -123,7 +123,7 @@ def main():
             "period": period,
             "comment": comment,
         }
-        data = {"values": values, "winner": winner, "loser": loser}
+        data = {"values": values, "winner": winner, "loser": loser, "winning_team": winning_team, "losing_team": losing_team}
         messages.append(data)
 
     comment = "⚔️ Here are the results from today 👇"
@@ -144,7 +144,7 @@ def main():
     for data in messages:
         msgs = []
         person = data["loser"]
-        team = data["values"]["losing_team"]
+        team = data["losing_team"]
         if person != "Jack":
             msg = f"❌ {team} is out! Get rekt {person} ☠️"
         else:

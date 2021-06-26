@@ -119,7 +119,7 @@ TEAMS = {
 SELECTIONS2 = {
     "Zoe": [
         "Denmark",
-        "Wales󠁿",
+        "Wales",
     ],
     "Emma": [
         "Portugal",
