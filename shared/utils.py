@@ -83,7 +83,7 @@ def teams_knocked_out_today():
 
     rv = []
     for team, info in data.items():
-        if info[today] == today:
+        if info["date"] == today:
             rv.append(team)
 
     return rv
